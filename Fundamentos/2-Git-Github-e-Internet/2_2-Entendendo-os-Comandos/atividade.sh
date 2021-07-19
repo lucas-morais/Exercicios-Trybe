@@ -66,3 +66,6 @@ git push -u origin trybe-skills-update
 
 
 # Abrir requisição de Pull
+
+
+# 10 Terminar as requisições, fazer o merge e deletar os branchs
