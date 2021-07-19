@@ -24,7 +24,7 @@ Este repositório contem todos os exercícios desenvolvidos durante o curso de d
     </ul>
 </ol>
 
-<s/br>
+<br>
 
 #### __Desenvolvimento Front-End__
 
