@@ -1,0 +1,4 @@
+Análise de Dados
+Estatística
+Python
+R
