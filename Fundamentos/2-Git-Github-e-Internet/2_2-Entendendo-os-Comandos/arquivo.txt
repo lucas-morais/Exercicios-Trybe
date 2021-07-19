@@ -2,3 +2,10 @@ Análise de Dados
 Estatística
 Python
 R
+
+Novas habilidades desenvolvidas na Trybe:
+Unix
+Bash
+Git 
+HTML
+CSS
