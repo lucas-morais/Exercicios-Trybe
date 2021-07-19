@@ -10,3 +10,7 @@ Git
 HTML
 CSS
 
+Novas skills:
+React
+NodeJs
+
