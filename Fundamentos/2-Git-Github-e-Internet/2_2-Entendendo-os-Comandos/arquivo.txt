@@ -3,3 +3,6 @@ Estatística
 Python
 R
 
+Novas skills:
+React
+NodeJs
