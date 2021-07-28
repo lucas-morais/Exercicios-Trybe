@@ -1,0 +1,30 @@
+li {
+    background-color: yellow;
+    font-size: 20px;
+}
+
+li em{
+    font-weight: bold;
+}
+
+li:nth-child(even):not(.programacao){
+    color: green;
+}
+
+li:nth-child(odd){
+    text-transform:uppercase;
+}
+
+.titulo{
+    color:red;
+}
+
+.titulo em{
+    font-size: 40px;
+    border: solid 1px black;
+}
+
+.programacao{
+    color:blue
+}
+
