@@ -1,0 +1,56 @@
+ul, ol{
+    list-style: none;
+}
+
+div:hover {
+    border-style: solid;
+}
+
+.primaria{
+    border-color: blue;
+}
+
+.secundaria{
+    border-color: yellow;
+}
+
+.complementar{
+    border-color: orange;
+}
+
+.clara{
+    border-color: lightblue;
+}
+
+.escura{
+    border-color: darkblue;
+}
+
+.hd1{
+    background-color: lightcyan;
+}
+
+.hd2{
+    color:darkred
+}
+
+.hd3{
+    font-family: sans-serif;
+}
+
+.hd4 {
+    text-align: center;
+}
+
+.hd5{
+    font-weight: 500;
+}
+
+.div3{
+    
+    height:200px;
+}
+
+.hd1, .hd3, .hd5{
+    font-style: italic;
+}

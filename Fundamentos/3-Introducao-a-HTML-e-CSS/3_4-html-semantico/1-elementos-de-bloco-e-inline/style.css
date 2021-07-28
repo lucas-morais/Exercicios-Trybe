@@ -1,0 +1,69 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.podio{
+    list-style: none;
+    width:75%;
+    padding: 0px;
+    margin: auto;
+   
+}
+
+.podio li{
+    margin: auto;
+}
+
+
+
+.first {
+    background-color: rgb(235, 200, 84);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+    
+}
+
+.perdedores{
+    display: inline-block;
+    margin: 0px auto 0px auto;
+}
+
+.second {
+    background-color: rgb(219, 219, 219);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    float: left;
+   }
+
+.third {
+    background-color: rgb(170, 142, 106);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+   
+}
+
+
+
+.premiacao{
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 20px;
+
+}
+
+.primeiro{
+    float:left; 
+    padding:0; 
+}
+
+
