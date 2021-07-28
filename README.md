@@ -28,6 +28,14 @@ Este repositório contem todos os exercícios desenvolvidos durante o curso de d
         <li>2. HTML e CSS - Primeiros passos em CSS </li>
         <li>3. HTML e CSS - Seletores e posicionamento</li>
         <li>4. HTML - HTML semâtico</li>  
+<li>Introdução à Javascript e Lógica de Programação</li>
+   <ul>
+	<li>1. Primeiros Passos</li>     
+	<li>2. Array e loop For</li>
+	<li>3. Lógica de Programação e Algoritmos</li>
+	<li>4. Objetos e Funções</li> 
+  </ul>	
+
 </ol>
 
 <br>
