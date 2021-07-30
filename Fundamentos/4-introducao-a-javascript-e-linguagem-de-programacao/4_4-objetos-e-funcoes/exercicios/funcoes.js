@@ -109,7 +109,7 @@ function contaNumeros (numeros){
 console.log("Número com mais ocorrências: " + contaNumeros(arrayNumeros));
 
 
-// 7.
+// 6.
 console.log("\n\nExercício 6\n");
 
 
@@ -123,3 +123,19 @@ function somatorio(n){
 
 let teste = 5;
 console.log('Somatório N = ' + teste + ': ' + somatorio(teste));
+
+// 7.
+console.log("\n\nExercício 7\n");
+
+function verificaFimPalavra(palavra, final){
+  return palavra.endsWith(final);
+}
+
+let palavra1 = 'trybe';
+let teste1 = 'be';
+let teste2 = 'ryb';
+
+console.log(palavra1 + ' termina com ' + teste1 + '? ' + verificaFimPalavra(palavra1, teste1));
+console.log(palavra1 + ' termina com ' + teste2 + '? ' + verificaFimPalavra(palavra1, teste2));
+
+
