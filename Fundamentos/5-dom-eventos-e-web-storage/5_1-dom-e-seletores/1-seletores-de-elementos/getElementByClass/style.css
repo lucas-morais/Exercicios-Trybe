@@ -1,0 +1,13 @@
+p {
+  padding: 10px 0;
+  height: 100px;
+  text-align: center;
+}
+
+.lenda {
+  border: 5px solid red;
+}
+
+.piloto-f1-atual{
+  border: 1px solid black;
+}
