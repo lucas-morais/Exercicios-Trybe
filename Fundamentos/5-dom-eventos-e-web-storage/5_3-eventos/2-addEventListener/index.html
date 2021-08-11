@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trybe DOM</title>
+</head>
+<body>
+  <p id="trybe">
+    Olá, somos a Trybe e temos uma oferta inacreditável para você...
+  </p>
+  
+  <p id="clicar">Parágrafo a ser clicado</p>
+  
+  <div>
+    <button id="mouse-over-leave">
+      Botão para ter mouse passado em cima e removido
+    </button>
+  </div>
+
+  <script>
+
+    // Exemplo 1 - click
+    let clickP = document.getElementById('clicar');
+    
+    // adiciona evento ao click
+    clickP.addEventListener('click', recebeClick);
+    clickP.addEventListener('mouseover', mouseEmCima)
+
+    function recebeClick(eventoOrigem){
+      // Imprime no console o elemento e o tipo de evento
+
+      console.log(eventoOrigem.target);
+      console.log(eventoOrigem.type);
+    }
+
+    // Exemplo 2 - Mouse over, mouse leave
+    let mouseOverLeaveButton = document.getElementById('mouse-over-leave');
+
+    // Evento de mouse over
+    mouseOverLeaveButton.addEventListener('mouseover', mouseEmCima);
+
+    // Evento de mouse leave
+    mouseOverLeaveButton.addEventListener('mouseleave', mouseSaiu);
+
+    function mouseEmCima(evento){
+      console.log('Mouse passou por cima');
+      console.log(evento.target);
+    }
+
+    function mouseSaiu(){
+      console.log('Mouse saiu do elemnto');
+    }
+
+   
+  </script>
+</body>
+</html>
