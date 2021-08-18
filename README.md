@@ -40,11 +40,21 @@ Este repositório contem todos os exercícios desenvolvidos durante o curso de d
   <br>  
   <li>Javascript: DOM, Seletores e Web Storage</li>
     <ul>
-      <li>DOM e Seletores</li>
-      <li>Trabalhando com Elementos</li>
-      <li>Eventos</li>
-      <li>Web Storage</li>
-    </ul>	
+      <li>1. DOM e Seletores</li>
+      <li>2. Trabalhando com Elementos</li>
+      <li>3. Eventos</li>
+      <li>4. Web Storage</li>
+    </ul>
+  <br>  
+  <li>HTML e CSS: Forms, Flexbox e Responsivo</li>
+    <ul>
+      <li>1. Forms</li>
+      <li>2. Bibliotecas Javascript e Framework CSS</li>
+      <li>3. CSS Flexbox - Introdução</li>
+      <li>4. CSS Flexbox - Parte 1</li>
+      <li>5. CSS Flexbox - Parte 2</li>
+      <li>6. CSS Responsivo - Mobile First</li>
+    </ul> 	
 </ol>
 <br>
 

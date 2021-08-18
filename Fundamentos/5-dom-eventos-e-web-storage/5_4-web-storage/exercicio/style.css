@@ -1,0 +1,15 @@
+.principal {
+  background-color: white;
+  color: black;
+  font-size: 17px;
+  line-height: 100%;
+  font-family: Calibri;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.texto {
+  text-align: justify;
+}
