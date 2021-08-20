@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+</head>
+<body>
+  <header>
+    <h1>Cadastro de currículo</h1>
+  </header>
+  <main>
+    <section class="field-group">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="field">
+          <label for="input-name">Nome:
+            <input type="text" name="name" id="input-name"
+             maxlength="40" size="30" required>
+          </label>
+        </div>
+        <div class="field">
+          <label for="input-email">Email:
+            <input type="email" name="email" id="input-email"
+             maxlength="50" size="30" required>
+          </label>
+        </div>
+        <div class="field">
+          <label for="input-cpf">CPF:
+            <input type="email" name="cpf" id="input-cpf"
+             maxlength="11" size="30" required>
+          </label>
+        </div>
+        <div class="field">
+          <label for="input-enereco">Endereço:
+            <input type="email" name="endereco" id="input-endereco"
+             maxlength="200" size="30" required>
+          </label>
+        </div>
+        <div class="field">
+          <label for="input-cidade">Cidade:
+            <input type="email" name="cidade" id="input-cidade"
+             maxlength="200" size="30" required>
+          </label>
+        </div>
+        <div class="field">
+          <label for="input-estado">Estado:
+            <select name="estado" id="input-estado"></select>
+          </label>
+        </div>
+        <div class="field">
+          <label for="">Moradia: 
+            <label for="casa">
+              <input type="radio" name="moradia" id="casa" required>Casa
+            </label>
+            <label for="apartamento">
+              <input type="radio" name="moradia" id="apartamento">Apartamento
+            </label>
+        </label>
+        </div>
+      </fieldset>
+    </section>
+    <section>
+      <fieldset class="field-group">
+        <legend>Dados Profissionais</legend>
+        <div class="field">
+          <label for="input-curriculo">Resumo do currículo:
+            <br>
+            <textarea name="curriculo" id="input-curriculo" cols="50" 
+            rows="15" maxlength="1000" required></textarea>
+          </label> 
+        </div>
+        <div class="field">
+          <label for="input-cargo"> Cargo:
+            <input type="text" name="cargo" id="input-cargo" 
+            size="30" maxlength="40" required>      
+          </label>
+        </div>
+        <div class="field">
+          <label for="input-descricao-cargo"> Descrição:
+            <input type="text" name="descricao-cargo" id="input-descricao-cargo" 
+            size="50" maxlength="500" required>      
+          </label>
+        </div>
+        <div class="field">Data de inicio: 
+          <label for="input-date">
+            <input type="text" name="data" id="input-data" 
+            size=30 maxlength="10" required>
+          </label>    
+        </div>
+      </fieldset>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
