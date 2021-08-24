@@ -1,0 +1,76 @@
+body {
+  font-size: 18px;
+  margin: 0 30px;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 26px;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 20px 0;
+}
+
+@media screen and (min-width:800px) {
+
+  body { 
+    background-color: seagreen;
+    font-size: 20px;
+    margin: 0 50px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  figure {
+    max-width: 40%;
+    margin: 30px auto;
+  }
+}
+
+@media screen and (min-width:1300px) {
+
+  body { 
+    background-color: dodgerblue;
+    color: whitesmoke;
+    font-size: 23px;
+    margin: 65px 65px;
+    max-width: 1450px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 32px;
+  }
+
+  .sub-header {
+    margin: 10px 0 40px 0;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  figure {
+    width: 33%;
+    margin: 30px auto;
+  }
+}
