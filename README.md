@@ -30,7 +30,7 @@ Este repositório contem todos os exercícios desenvolvidos durante o curso de d
       <li>4. HTML - HTML semâtico</li>  
     </ul>
   <br>
-  <li>Introdução à Javascript e Lógica de Programação</li>
+  <li>Introdução à JavaScript e Lógica de Programação</li>
     <ul>
       <li>1. Primeiros Passos</li>     
       <li>2. Array e loop For</li>
@@ -38,7 +38,7 @@ Este repositório contem todos os exercícios desenvolvidos durante o curso de d
       <li>4. Objetos e Funções</li> 
     </ul>
   <br>  
-  <li>Javascript: DOM, Seletores e Web Storage</li>
+  <li>JavaScript: DOM, Seletores e Web Storage</li>
     <ul>
       <li>1. DOM e Seletores</li>
       <li>2. Trabalhando com Elementos</li>
@@ -53,6 +53,12 @@ Este repositório contem todos os exercícios desenvolvidos durante o curso de d
       <li>3. CSS Flexbox - Parte 1</li>
       <li>4. CSS Flexbox - Parte 2</li>
       <li>5. CSS Responsivo - Mobile First</li>
+    </ul> 
+    <li>Introdução à JavaScript ES6 e Testes Unitários</li>
+    <ul>
+      <li>1. JavaScript ES6 - var, let, const, arrow functions e tamplate literals</li>
+      <li>2. JavaScript ES6 - Objects</li>
+      <li>3. Testes unitários em JavaScript</li>
     </ul> 	
 </ol>
 <br>
