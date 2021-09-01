@@ -54,12 +54,14 @@ Este repositório contem todos os exercícios desenvolvidos durante o curso de d
       <li>4. CSS Flexbox - Parte 2</li>
       <li>5. CSS Responsivo - Mobile First</li>
     </ul> 
+  <br>
   <li>Introdução à JavaScript ES6 e Testes Unitários</li>
     <ul>
       <li>1. JavaScript ES6 - var, let, const, arrow functions e tamplate literals</li>
       <li>2. JavaScript ES6 - Objects</li>
       <li>3. Testes unitários em JavaScript</li>
     </ul>
+  <br>  
   <li>Higher Order Functions do JavaScript ES6</li>
     <ul>
       <li>1. JavaScript ES6 - Introdução a Higher Order Functions</li>
