@@ -54,12 +54,20 @@ Este repositório contem todos os exercícios desenvolvidos durante o curso de d
       <li>4. CSS Flexbox - Parte 2</li>
       <li>5. CSS Responsivo - Mobile First</li>
     </ul> 
-    <li>Introdução à JavaScript ES6 e Testes Unitários</li>
+  <li>Introdução à JavaScript ES6 e Testes Unitários</li>
     <ul>
       <li>1. JavaScript ES6 - var, let, const, arrow functions e tamplate literals</li>
       <li>2. JavaScript ES6 - Objects</li>
       <li>3. Testes unitários em JavaScript</li>
-    </ul> 	
+    </ul>
+  <li>Higher Order Functions do JavaScript ES6</li>
+    <ul>
+      <li>1. JavaScript ES6 - Introdução a Higher Order Functions</li>
+      <li>2. JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort</li>
+      <li>3. JavaScript ES6 - Higher Order Functions - map e filter</li>
+      <li>4. JavaScript ES6 - Higher Order Functions - reduce</li>
+      <li>5. JavaScript ES6 - Higher Order Functions - spread operatro, parâmetro rest, destructing e mais</li>
+    </ul>
 </ol>
 <br>
 
