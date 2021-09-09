@@ -8,3 +8,4 @@ console.log(quantosParametros('string', null, [1, 2, 3], { }));
 
 const sum = (...args) => args.reduce((accumulator, curret) => accumulator + curret);
 console.log(sum(4, 7, 8, 9, 60));
+
