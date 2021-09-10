@@ -70,6 +70,12 @@ Este repositório contem todos os exercícios desenvolvidos durante o curso de d
       <li>4. JavaScript ES6 - Higher Order Functions - reduce</li>
       <li>5. JavaScript ES6 - Higher Order Functions - spread operatro, parâmetro rest, destructing e mais</li>
     </ul>
+  <br>  
+  <li>JavaScript Assíncrono e Promisses</li>
+    <ul>
+      <li>1. JavaScript Assíncrono e Callbacks</li>
+      <li>2. JavaScript Promisses</li> 
+    </ul>
 </ol>
 <br>
 
