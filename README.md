@@ -71,10 +71,17 @@ Este repositório contem todos os exercícios desenvolvidos durante o curso de d
       <li>5. JavaScript ES6 - Higher Order Functions - spread operatro, parâmetro rest, destructing e mais</li>
     </ul>
   <br>  
-  <li>JavaScript Assíncrono e Promisses</li>
+  <li>JavaScript Assíncrono e Promises</li>
     <ul>
       <li>1. JavaScript Assíncrono e Callbacks</li>
-      <li>2. JavaScript Promisses</li> 
+      <li>2. JavaScript Promises</li> 
+    </ul>
+  <br>  
+  <li>Testes Automatizados com Jest</li>
+    <ul>
+      <li>1. Primeiros Passos no Jest</li>
+      <li>2. Jest - Testes Assíncronos</li>
+      <li>3. Jest - Simulando Comportamentos</li> 
     </ul>
 </ol>
 <br>
