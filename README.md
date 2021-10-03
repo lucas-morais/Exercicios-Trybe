@@ -7,8 +7,6 @@ Este repositório contem todos os exercícios desenvolvidos durante o curso de d
 ### __Fundamentos do Desenvolvimento Web__
 </br>  
 
-#### __Bloco 1: Unix & Bash__
-  
 <ol>
   <li>Unix e Bash</li>
     <ul>
@@ -86,7 +84,7 @@ Este repositório contem todos os exercícios desenvolvidos durante o curso de d
 </ol>
 <br>
 
-#### __Desenvolvimento Front-End__
+### __Desenvolvimento Front-End__
 
 <ol>
   <li>Introdução à React</li>
