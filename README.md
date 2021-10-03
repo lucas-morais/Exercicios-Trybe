@@ -12,8 +12,8 @@ Este repositório contem todos os exercícios desenvolvidos durante o curso de d
 <ol>
   <li>Unix e Bash</li>
     <ul>
-      <li>3. Unix e Bash - Parte 1
-      <li>4. Unix e Bash - Parte 2
+      <li>3. Unix e Bash - Parte 1</li>
+      <li>4. Unix e Bash - Parte 2</li>
     </ul>
   <br>
   <li> Git, Github e Internet</li>
@@ -87,6 +87,15 @@ Este repositório contem todos os exercícios desenvolvidos durante o curso de d
 <br>
 
 #### __Desenvolvimento Front-End__
+
+<ol>
+  <li>Introdução à React</li>
+    <ul>
+      <li>1. 'Hello, world!' no React</li>
+      <li>2. Componentes React</li>
+    </ul>
+    <br>
+</ol>
 
 #### __Desenvolvimento Back-End__
 
