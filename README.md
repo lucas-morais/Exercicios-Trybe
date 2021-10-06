@@ -1,13 +1,13 @@
 # __Portifólio de Exercícios da Trybe__
 
-Este repositório contem todos os exercícios desenvolvidos durante o curso de desenvolvimento web da Trybe
+Este repositório contem todos os exercícios desenvolvidos durante o curso de desenvolvimento web da Trybe.
 </br>
 </br>
 
-### __Fundamentos do Desenvolvimento Web__
-</br>  
 
 <ol>
+<h2><b>Fundamentos do Desenvolvimento Web</b></h2>
+</br>  
   <li>Unix e Bash</li>
     <ul>
       <li>3. Unix e Bash - Parte 1</li>
@@ -81,19 +81,26 @@ Este repositório contem todos os exercícios desenvolvidos durante o curso de d
       <li>2. Jest - Testes Assíncronos</li>
       <li>3. Jest - Simulando Comportamentos</li> 
     </ul>
-</ol>
 <br>
-
-### __Desenvolvimento Front-End__
-
-<ol>
+<br>
+<h2><b>Desenvolvimento Front-End</b></h2>
+<br>
   <li>Introdução à React</li>
     <ul>
       <li>1. 'Hello, world!' no React</li>
       <li>2. Componentes React</li>
     </ul>
     <br>
+  <li>Componentes com Estado, Eventos e Formulários com React</li>
+    <ul>
+      <li>1. Componentes com estados e eventos</li>
+      <li>2. Formulários no React</li>
+    </ul>
+    <br>
 </ol>
+<br>
+
+
 
 #### __Desenvolvimento Back-End__
 
