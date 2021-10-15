@@ -1,9 +1,8 @@
-# __Portifólio de Exercícios da Trybe__
+# **Portifólio de Exercícios da Trybe**
 
 Este repositório contem todos os exercícios desenvolvidos durante o curso de desenvolvimento web da Trybe.
 </br>
 </br>
-
 
 <ol>
 <h2><b>Fundamentos do Desenvolvimento Web</b></h2>
@@ -97,12 +96,15 @@ Este repositório contem todos os exercícios desenvolvidos durante o curso de d
       <li>2. Formulários no React</li>
     </ul>
     <br>
+  <li>Ciclo de Vida de Componentes e React Router</li>
+    <ul>
+      <li>1. Ciclo de Vida dos Componentes</li>
+      <li>2. React Router</li>
+    </ul>
+    <br>
 </ol>
 <br>
 
+#### **Desenvolvimento Back-End**
 
-
-#### __Desenvolvimento Back-End__
-
-#### __Ciência da Computação__
-
+#### **Ciência da Computação**
