@@ -102,6 +102,18 @@ Este repositório contem todos os exercícios desenvolvidos durante o curso de d
       <li>2. React Router</li>
     </ul>
     <br>
+  <li>Metodologias Ágeis</li>
+    <ul>
+      <li>1. Metodologias Ágeis</li>
+    </ul>
+    <br>
+  <li>Testes Automatizados com React Testing Library</li>
+    <ul>
+      <li>1. Primeiros Passos</li>
+      <li>2. Mocks e Inputs</li>
+      <li>3. Testando React Router</li>
+    </ul>
+    <br>
 </ol>
 <br>
 
