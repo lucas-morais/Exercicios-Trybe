@@ -11,5 +11,9 @@ describe('testing clicks', () => {
     expect(buttonAdd).toBeInTheDocument();
     expect(screen.queryByText('0')).toBeInTheDocument();
   });
+  it('should have a different initial value', () => {
+    renderWithRedux(<App />, { initialState: {clickReducer: {counter: 5} }});
 
+    expect(screen.queryByText('5')).toBeInTheDocument();
+  })
 });
