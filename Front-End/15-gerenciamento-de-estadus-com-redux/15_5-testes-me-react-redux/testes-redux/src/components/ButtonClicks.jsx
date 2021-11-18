@@ -7,7 +7,7 @@ class ButtonClicks extends React.Component {
     const { add } = this.props;
     return (
       <div>
-        <button onClick={ add }>Click Aqui</button>
+        <button onClick={ add }>Clique Aqui</button>
       </div>
     );
   }
