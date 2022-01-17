@@ -1,0 +1,5 @@
+# container base
+FROM chuanwen/cowsay:latest
+
+ENTRYPOINT [ "usr/games/cowsay" ]
+CMD [ "Olá! Esta é a mensagem padrão!" ]
