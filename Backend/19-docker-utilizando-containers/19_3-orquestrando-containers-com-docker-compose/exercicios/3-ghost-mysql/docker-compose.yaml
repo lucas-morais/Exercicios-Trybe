@@ -1,0 +1,33 @@
+version: '3'
+services: 
+  db:
+    image: mysql:5.7
+    restart: always
+    environment: 
+      MYSQL_ROOT_PASSWORD: senha123
+    volumes:
+      - db-volume:/var/lib/mysql
+    networks:
+      - ghost-network
+  
+  
+  ghost:
+    image: ghost:1-alpine
+    restart: always
+    ports: 
+      - 2368:2368
+    depends_on: 
+      - "db"
+    environment:
+      database__client: mysql
+      database__connection__database: ghost
+      database__connection__host: db
+      database__connection__user: root
+      database__connection__password: senha123
+    networks:
+      - ghost-network
+
+volumes:
+  db-volume:
+networks:
+  ghost-network:
