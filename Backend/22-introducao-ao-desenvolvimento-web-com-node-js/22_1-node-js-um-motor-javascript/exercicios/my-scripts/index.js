@@ -3,7 +3,9 @@ const readline = require('readline-sync')
 const files = [
   'imc',
   'velocidade',
-  'sorteio'
+  'sorteio',
+  'fatorial',
+  'fibonacci',
 ];
 
 const filesList = files.reduce((acc, file, index) => (
