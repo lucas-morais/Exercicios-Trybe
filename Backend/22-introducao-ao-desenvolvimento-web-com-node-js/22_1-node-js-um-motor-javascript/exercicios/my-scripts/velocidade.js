@@ -13,7 +13,7 @@ const velocidade = () => {
   console.log(`Velocidade média: ${velocidadeMedia} m/s`);
 }
 
-// velocidade();
+velocidade();
 
 
 module.exports = velocidade;

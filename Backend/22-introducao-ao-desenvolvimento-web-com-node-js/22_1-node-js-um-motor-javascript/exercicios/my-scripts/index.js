@@ -12,9 +12,9 @@ const filesList = files.reduce((acc, file, index) => (
   acc + `${index + 1} ${file}\n`), 'Escolha o script\n\n');
 
 const rodarScript = (fileName) => {
-  const script = require(`./${fileName}`)
   console.log(`\nRodando script ${fileName}\n`);
-  script();
+  require(`./${fileName}`)
+  // script();
 }
 
   const getFileName = ()  => {

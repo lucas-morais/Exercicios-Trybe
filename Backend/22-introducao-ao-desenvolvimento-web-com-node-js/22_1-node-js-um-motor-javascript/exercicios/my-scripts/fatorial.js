@@ -14,6 +14,6 @@ const fatorial = () => {
   }
 }
 
-// fatorial();
+fatorial();
 
 module.exports = fatorial;

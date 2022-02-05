@@ -22,6 +22,6 @@ const jogar = () => {
   return;
 }
 
-// jogar();
+jogar();
 module.exports = jogar;
 

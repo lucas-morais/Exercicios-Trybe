@@ -23,8 +23,10 @@ const imc = () => {
   const peso = readline.questionInt('Qual seu peso? ');
   
   const imcCalculado = calculaImc(altura, peso);
-  const situacao = tabela(imc);
+  const situacao = tabela(imcCalculado);
   console.log(`Seu imc é ${imcCalculado}: ${situacao} `);
 }
+
+imc();
 
 module.exports = imc;
