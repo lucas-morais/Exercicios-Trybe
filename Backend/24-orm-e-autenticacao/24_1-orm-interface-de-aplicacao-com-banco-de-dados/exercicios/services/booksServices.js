@@ -41,5 +41,14 @@ async function destroy(id) {
   return bookUpdated; 
 }
 
+async function getByAuthor(author) {
+  const books = await Book.findAll(
+    {
+      where: { author }
+    }
+  )
+  return books; 
+}
 
-module.exports = { getAll, getById, create, update, destroy }
+
+module.exports = { getAll, getById, create, update, destroy, getByAuthor }

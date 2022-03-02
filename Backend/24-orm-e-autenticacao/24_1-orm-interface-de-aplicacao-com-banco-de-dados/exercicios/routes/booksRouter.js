@@ -5,6 +5,7 @@ const BooksController = require('../controllers/booksController');
 const router = express.Router();
 
 router.get('/', BooksController.getAll);
+router.get('/search', BooksController.getByAuthor);
 router.get('/:id', BooksController.getById);
 router.post('/', BooksController.create);
 router.put('/:id', BooksController.update);

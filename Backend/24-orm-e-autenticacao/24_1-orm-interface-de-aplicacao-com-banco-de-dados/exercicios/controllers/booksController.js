@@ -56,6 +56,17 @@ async function destroy(req, res, next) {
   }
 }
 
+async function getByAuthor(req, res, next) {
+  const {author} = req.query;
+  
+  try{
+    const books = await BooksServices.getByAuthor(author);
+    return res.status(200).json(books);
+  } catch(e) {
+    next(e);
+  }
+}
 
 
-module.exports = { getAll, getById, create, update, destroy }
+
+module.exports = { getAll, getById, create, update, destroy, getByAuthor }
