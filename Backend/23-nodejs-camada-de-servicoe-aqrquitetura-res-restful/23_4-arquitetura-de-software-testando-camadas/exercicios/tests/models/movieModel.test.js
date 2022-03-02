@@ -30,5 +30,8 @@ describe('Insere um novo filme no BD', () =>{
       expect(response).to.be.a.property('id');
     })
   })
-})
+});
 
+describe('Busca um filme no BD pelo "id"', () => {
+  
+})
