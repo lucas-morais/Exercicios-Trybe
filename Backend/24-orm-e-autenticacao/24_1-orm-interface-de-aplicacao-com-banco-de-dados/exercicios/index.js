@@ -13,3 +13,5 @@ app.use('/book', booksRouter);
 app.use(errorMiddleware);
 
 app.listen(PORT, () => { console.log('App runnig on port 3000') });
+
+module.exports = app;
