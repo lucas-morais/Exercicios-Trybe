@@ -2,7 +2,12 @@ const { Book } = require('../models');
 
 
 async function getAll() {
-  const books = await Book.findAll();
+  const books = await Book.findAll({
+    order: [
+      ['title'],
+      ['created_at']
+    ]
+  });
   return books; 
 }
 
@@ -28,8 +33,12 @@ async function create(book) {
 
 
 async function update(updateFields, id) {
+  const updatedAt = new Date()
   const bookUpdated = await Book.update(
-    updateFields,
+    {
+      ...updateFields,
+      updatedAt,
+    },
     { where: { id }},
   );
   return bookUpdated; 

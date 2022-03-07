@@ -5,7 +5,6 @@ const Book = (sequelize, DataTypes) => {
     pageQuantity: DataTypes.INTEGER
   },
   {
-    updatedAt: false,
     underscored: true,
     tableName: 'Books' 
   });
