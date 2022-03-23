@@ -21,3 +21,10 @@ const melhorSO = 'linux';
 console.log(`Melhor SO: ${melhorSO}`);
 const umaVogal = 'o';
 console.log(umaVogal);
+const teste = {
+    frase: 'testando',
+    quantidade: 50,
+    acao: (n) => `retorno: ${n}`
+};
+console.log(teste);
+console.log(teste.acao(5));

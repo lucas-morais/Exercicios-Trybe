@@ -38,3 +38,18 @@ console.log(`Melhor SO: ${melhorSO}`);
 type vogal = 'a' | 'e' | 'i' | 'o' | 'u';
 const umaVogal = 'o';
 console.log(umaVogal); 
+
+type Teste = {
+  frase: string,
+  quantidade: number,
+  acao(n: number): string, 
+}
+
+const teste: Teste = {
+  frase: 'testando',
+  quantidade: 50,
+  acao: (n) => `retorno: ${n}`
+}
+
+console.log(teste);
+console.log(teste.acao(5))
