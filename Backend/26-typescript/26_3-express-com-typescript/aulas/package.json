@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn build && node ./dist/server.js",
-    "dev": "tsnd ./src/server.ts",
+    "dev": "tsnd ./api/server.ts",
     "build": "tsc"
   },
   "devDependencies": {
@@ -15,6 +15,8 @@
     "typescript": "^4.6.2"
   },
   "dependencies": {
-    "express": "^4.17.3"
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3"
   }
 }

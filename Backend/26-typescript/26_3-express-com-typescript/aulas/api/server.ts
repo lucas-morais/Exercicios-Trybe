@@ -1,17 +1,18 @@
 import express, { Request, Response } from 'express';
 import { book } from './routes';
 
-const app = express();
-
 const PORT = 3000;
 
 
+const app = express();
+
+app.use(express.json());
 
 app.get('/', (req:Request, res: Response): Response => {
   return res.send('Express + Typescript');
 });
 
-app.use(book)
+app.use('/books', book);
 
 
 app.listen(PORT, () => {
