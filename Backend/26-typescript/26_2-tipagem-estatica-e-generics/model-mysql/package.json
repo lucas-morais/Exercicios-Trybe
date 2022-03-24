@@ -1,0 +1,16 @@
+{
+  "name": "model-mysql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "mysql2": "^2.3.3",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@types/readline-sync": "^1.4.4",
+    "typescript": "^4.6.2"
+  }
+}
