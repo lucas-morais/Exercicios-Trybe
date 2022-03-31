@@ -1,6 +1,7 @@
 import express, { Express, Request, Response, NextFunction } from 'express';
 import UserController from './controller/UserController';
 import ErrorMddleware from './middlewares/error';
+import UserService from './services/UserServices';
 
 export default class App {
   
@@ -14,7 +15,9 @@ export default class App {
 
     this.app.use(express.json());
 
-    this.userController = new UserController();
+    this.userController = new UserController(
+      new UserService()
+    );
 
     this.routes();
 
