@@ -1,5 +1,6 @@
 import express, { Express, Request, Response, NextFunction } from 'express';
 import UserController from './controller/UserController';
+import ErrorMddleware from './middlewares/error';
 
 export default class App {
   
@@ -16,6 +17,8 @@ export default class App {
     this.userController = new UserController();
 
     this.routes();
+
+    this.app.use(ErrorMddleware.handleError);
   }
 
   private routes() {
