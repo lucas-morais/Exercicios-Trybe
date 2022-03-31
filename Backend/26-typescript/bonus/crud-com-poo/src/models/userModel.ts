@@ -1,28 +1,14 @@
 import { ResultSetHeader ,RowDataPacket } from "mysql2/promise";
 import { IUser } from "../interfaces/user";
 import DBContext from "./connection";
+import Model from "./model";
 
-export default class UserModel {
-  constructor(private context: DBContext ) {
+export default class UserModel extends Model<IUser>{
+  constructor(protected context: DBContext ) {
+    super(context)
 
-  }
-
-  async getAll(): Promise<IUser[]> {
-    let [result] = await this.context.getConnection().execute<RowDataPacket[]>(
-      'SELECT * FROM user'
-    );
-    return result as IUser[];
-  }
-
-  async create(user: IUser): Promise<IUser> {
-    const [result] = await this.context.getConnection()
-      .execute<ResultSetHeader>(
-        'INSERT INTO user(username, password) VALUE(?, ?)',
-        [user.username, user.password]
-      );
-
-    user.id = result.insertId;
-
-    return user;
+    this.GET_ALL_QUERY = 'SELECT * FROM user';
+    this.INSERT_QUERY = 'INSERT INTO user(username, password) VALUE(?, ?)'
+    this.UPDATE_QUERY = ''
   }
 }
