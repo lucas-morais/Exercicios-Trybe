@@ -1,13 +1,19 @@
 import express, { Express, Request, Response, NextFunction } from 'express';
 import UserController from './controller/UserController';
 import ErrorMddleware from './middlewares/error';
+import DBContext from './models/connection';
+import UserModel from './models/userModel';
 import UserService from './services/UserServices';
+import Config, { ConfigMap } from './config';
 
 export default class App {
   
-  private static PORT: number = 3000;
   private app: Express;
-  private userController: UserController
+  private userController: UserController;
+  private userService: UserService;
+  private userModel: UserModel;
+  private dbContext: DBContext;
+  private config: ConfigMap
 
   constructor() {
 
@@ -15,9 +21,14 @@ export default class App {
 
     this.app.use(express.json());
 
-    this.userController = new UserController(
-      new UserService()
-    );
+    this.config = new Config()
+
+    this.dbContext = new DBContext(this.config)
+
+    this.userModel = new UserModel(this.dbContext);
+    this.userService = new UserService(this.userModel);
+    this.userController = new UserController(this.userService);
+    
 
     this.routes();
 
@@ -35,7 +46,10 @@ export default class App {
   }
 
   public start() {
-    this.app.listen(3000, () => console.log(`Running on port ${App.PORT}`))
+    const port = this.config.api.port
+    this.app.listen(port, () => console.log(`Running on port ${port}`))
   }
+
+
 
 }

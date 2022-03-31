@@ -1,13 +1,14 @@
 import { IUser } from "../interfaces/user";
+import UserModel from "../models/userModel";
 
 export default class UserService {
   
-  constructor() {
+  constructor(private userModel: UserModel) {
 
   }
 
   async list ():Promise<IUser[]> {
-
-    return [];
+    const users = await this.userModel.getAll();
+    return users;
   }
 }
