@@ -16,4 +16,14 @@ export default class UserController {
       next(error);
     }
   }
+  
+  async create(req: Request, res: Response, next: NextFunction): Promise<void> {
+    try {
+      const newUser: IUser = req.body;
+      const created = await this.userService.create(newUser);
+      res.status(201).json(created);
+    } catch (error) {
+      next(error);
+    }
+  }
 }

@@ -42,6 +42,10 @@ export default class App {
 
     this.app.get('/users', async(req: Request, res: Response, next: NextFunction) => {
       await this.userController.list(req, res, next);
+    });
+
+    this.app.post('/users', async(req: Request, res: Response, next: NextFunction) => {
+      await this.userController.create(req, res, next);
     })
   }
 
