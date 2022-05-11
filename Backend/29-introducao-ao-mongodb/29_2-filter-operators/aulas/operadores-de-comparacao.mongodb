@@ -1,0 +1,25 @@
+show dbs
+
+use business;
+
+db.restaurants.countDocuments();
+
+// 1
+db.restaurants.countDocuments({ borough: {$in: ["Queens", "Staten Island", "Bronx"]}})
+
+
+//2
+db.restaurants.find({ cuisine: {$ne: "American"}})
+
+
+//3
+db.restaurants.find({rating: {$gte: 8.0}})
+db.restaurants.countDocuments({rating: {$gte: 8.0}})
+
+//4
+db.restaurants.find({rating: {$lt: 4.0}})
+
+
+//5
+db.restaurants.find({rating: {$nin: [5, 6, 7]}})
+db.restaurants.countDocuments({rating: {$nin: [5, 6, 7]}})
