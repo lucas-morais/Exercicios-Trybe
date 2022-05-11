@@ -32,7 +32,7 @@ db.restaurants.countDocuments({
   ]
 })
 
-db.restaurants.find({
+db.restaurants.countDocuments({
   $and: [
     { $or: [{ rating: {$gt: 6, $lt: 10}}]},
     { $or: [{ borough: "Brooklyn"}, { cuisine: "Delicatessen"}] }
