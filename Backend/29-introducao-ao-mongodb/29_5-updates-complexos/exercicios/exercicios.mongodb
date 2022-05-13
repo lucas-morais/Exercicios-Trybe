@@ -1,0 +1,155 @@
+use movies;
+
+db.movies.find();
+
+
+// 1.
+db.movies.updateOne(
+  {title: "Batman"},
+  {$push: {
+    category: "superhero"
+  }}
+)
+db.movies.findOne({title: "Batman"})
+
+// 2. 
+db.movies.updateOne(
+  {title: "Batman"},
+  {$push: {
+    category: { $each: ["villain", "comic-based"]}
+  }}
+)
+db.movies.findOne({title: "Batman"})
+
+// 3.
+db.movies.updateOne(
+  {title: "Batman"},
+  {$pull: {
+    category: "action"
+  }}
+)
+db.movies.findOne({title: "Batman"})
+
+// 4.
+db.movies.updateOne(
+  {title: "Batman"},
+  {$pop: {
+    category: -1
+  }}
+)
+db.movies.findOne({title: "Batman"})
+
+// 5.
+db.movies.updateOne(
+  {title: "Batman"},
+  {$pop: {
+    category: 1
+  }}
+)
+db.movies.findOne({title: "Batman"})
+
+// 6.
+db.movies.updateOne(
+  {title: "Batman"},
+  {$addToSet: {
+    category: "action"
+  }}
+)
+db.movies.findOne({title: "Batman"})
+
+// 7.
+db.movies.updateMany({
+  $or:[
+    {title: "Batman"}, 
+    {title:"Home Alone"}
+  ]},
+  {$addToSet: {
+    category: "90's"
+  }}
+)
+db.movies.find({$or:[
+    {title: "Batman"}, 
+    {title:"Home Alone"}
+  ]})
+
+// 8.
+db.movies.updateOne(
+  {title: "Home Alone"},
+  {$addToSet: {
+    cast: {$each: [
+      {
+        "actor": "Macaulay Culkin",
+        "character": "Kevin"
+      },
+      {
+        "actor": "Joe Pesci",
+        "character": "Harry"
+      },
+      {
+        "actor": "Daniel Stern"
+      }
+    ]}
+  }}
+)
+
+db.movies.find({title:"Home Alone"})
+
+
+// 9.
+db.movies.updateOne(
+  {title: "Home Alone", "cast.actor": "Daniel Stern"},
+  {$set: {"cast.$.character": "Marv"}}
+)
+
+db.movies.find({title:"Home Alone"})
+
+//10. 
+db.movies.updateOne(
+  {title: "Batman"},
+  {$addToSet: {
+    cast: {$each: [
+      {
+        "character": "Batman"
+      },
+      {
+        "character": "Alfred"
+      },
+      {
+        "character": "Coringa"
+      }
+    ]}
+  }}
+)
+db.movies.find({title:"Batman"})
+
+//11
+db.movies.updateOne(
+  {title: "Batman", "cast.character": "Batman"},
+  {$set:{"cast.$.actor": ["Christian Bale"]}},
+)
+
+db.movies.updateOne(
+  {title: "Batman", "cast.character": "Alfred"},
+  {$set: {"cast.$.actor": ["Michael Caine"]}},
+)
+
+db.movies.updateOne(
+  {title: "Batman", "cast.character": "Coringa"},
+  {$set: {"cast.$.actor": ["Heath Ledger"]}},
+)
+
+db.movies.find({title:"Batman"})
+
+
+//12
+db.movies.updateOne(
+  {title: "Batman", "cast.character": "Batman"},
+  {$push :
+    {
+      "cast.$.actor": { $each: 
+        ["Michael Keaton", "Val Kilmer", "George Clooney"],
+        $sort: 1
+      },
+    }
+  },
+)
